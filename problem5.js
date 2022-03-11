@@ -1,9 +1,9 @@
+import {carYear} from "../problem4.js";
 export function problem(inventory){
     let oldCar=[];
-    let k=0;
-    for(let i=0;i<inventory.length;i++){
-        if(inventory[i].car_year<2000){
-            oldCar[k++]=inventory[i].car_year;
+    for(let i=0;i<carYear.length;i++){
+        if(carYear[i]<2000){
+            oldcar.push(carYear[i]);
         }
     }
     return oldCar;
