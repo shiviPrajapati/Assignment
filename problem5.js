@@ -1,4 +1,4 @@
-import {carYear} from "../problem4.js";
+import {carYear} from "../testProblem4.js";
 export function problem(inventory){
     let oldCar=[];
     for(let i=0;i<carYear.length;i++){
