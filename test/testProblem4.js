@@ -1,5 +1,5 @@
 import {inventory} from "../invent.js";
 
 import {problem} from "../problem4.js";
-
-console.log(problem(inventory));
+export const carYear=problem(inventory);
+console.log(carYear);
