@@ -1,4 +1,7 @@
-export function problem(inventory,num){
-    if(num<51 && num>0)
-    return `"Car ${num} is a ${inventory[num-1].car_year} ${inventory[num-1].car_make} ${inventory[num-1].car_model}`;
+export function dataById(inventory,id){
+    if(!id || !inventory){
+        return 0;
+    }
+    return `"Car ${id} is a ${inventory[id-1].car_year} ${inventory[id-1].car_make} ${inventory[id-1].car_model}`;
+    
 }
