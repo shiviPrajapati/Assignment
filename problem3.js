@@ -1,8 +1,15 @@
 export function problem(inventory){
-    let carModal=[];
-    for(let i=0;i<inventory.length;i++){
-        carModal[i]=inventory[i].car_model;
-    }
-    carModal.sort();
-    return carModal;
-} 
+    inventory.sort((a,b)=>{
+        let fa=a.car_model,
+            fb=b.car_model;
+
+        if(fa<fb){
+            return -1;
+        }
+        if(fa>fb){
+            return 1;
+        }
+        return 0;
+    });
+    return inventory.car;
+}
